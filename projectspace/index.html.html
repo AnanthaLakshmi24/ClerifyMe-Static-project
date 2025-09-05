@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClarifyMe</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+
+        header {
+            background: white;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 45px;
+            display: flex;
+            align-items: center;
+            color: #1574d3;
+        }
+        
+        .logo i {
+            margin-right: 8px;
+            font-size: 40px;
+        }
+
+        .login-btn {
+            padding: 14px 20px;
+            background-color: #1574d3;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: linear-gradient(to bottom right, #2962ff, #0039cb);
+            color: white;
+            text-align: center;
+            padding: 100px 20px 80px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 24px;
+        }
+
+        .get-started-btn {
+            padding: 12px 24px;
+            background: white;
+            color: #0039cb;
+            border-radius: 8px;
+            font-weight: bold;
+            border: none;
+            text-decoration: none;
+        }
+
+        .get-started-btn:hover{
+            background: #0039cb;
+            color: white;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .feature-box {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 24px;
+            width: 280px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-box h3 {
+            margin-top: 16px;
+            font-size: 20px;
+        }
+
+        .feature-box p {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        .how-it-works {
+            text-align: center;
+            background: #f7f9fc;
+            padding: 60px 20px;
+        }
+
+        .roles {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 80px;
+            margin-top: 40px;
+        }
+
+        .role {
+            max-width: 300px;
+            text-align: left;
+        }
+
+        .role h3 {
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .role ul {
+            list-style: none;
+        }
+
+        .role li {
+            margin-bottom: 10px;
+            padding-left: 24px;
+            position: relative;
+            font-size: 17px;
+        }
+
+        .role li::before {
+            content: '\2713'; /* checkmark */
+            position: absolute;
+            left: 0;
+            color: green;
+        }
+
+        .cta {
+            background: #2962ff;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .cta-button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            background: white;
+            color: #0039cb;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .cta a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: white;
+            color: #0039cb;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .cta a:hover {
+            background-color: #0039cb;
+            color: white;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: aliceblue;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 12px;
+            color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo">
+      <i class="fa-solid fa-graduation-cap"></i>ClarifyMe</div>
+    <a href="loginpage.html" class="login-btn">Login</a>
+  </header>
+
+    <section class="hero">
+        <div>
+            <h1 style="font-size: 60px;"><i class="fa-solid fa-graduation-cap"></i>ClarifyMe</h1>
+            <p style="font-size: 23px;">Connecting Students and Faculty Through Academic Discussion</p>
+            <p style="color: rgb(229, 226, 226);">A platform designed to foster meaningful educational discussions, where students can ask questions and faculty can provide expert guidance.</p>
+            <a href="loginpage.html" class="get-started-btn">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 style="font-size: 40px;">Platform Features</h2>
+        <p style="font-size: 20px; color:rgb(71, 71, 71) ;">ClarifyMe provides a comprehensive set of tools to enhance academic communication</p>
+        <div class="features">
+            <div class="feature-box">
+                <h3><i class="fa-regular fa-message" style="font-size: 50px;"></i><br><br>Discussion Forums</h3>
+                <p>Organized subject-based discussions where students can post questions and receive answers from qualified faculty members.</p>
+            </div>
+            <div class="feature-box">
+                <h3><i class="fa-solid fa-user-group" style="font-size: 50px;"></i><br><br>Role-Based Access</h3>
+                <p>Separate interfaces for students and faculty with tailored features for each user type to optimize their experience.</p>
+            </div>
+            <div class="feature-box">
+                <h3><i class="fa-solid fa-book-open" style="font-size: 50px;"></i><br><br>Academic Focus</h3>
+                <p>Designed specifically for educational environments with features that promote learning and academic excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2 style="font-size: 40px;">How It Works</h2>
+        <p style="font-size: 20px; color:rgb(71, 71, 71) ;">Simple steps to get started with academic discussions</p>
+        <div class="roles">
+            <div class="role">
+                <h3><i class="fa-solid fa-user-graduate"></i></i> For Students</h3>
+                <ul>
+                    <li>Login with Student Credentials</li>
+                    <li>Post Questions</li>
+                    <li>Get Expert Answers</li>
+                </ul>
+            </div>
+            <div class="role">
+                <h3><i class="fa-solid fa-person-chalkboard"></i> For Faculty</h3>
+                <ul>
+                    <li>Access Faculty Dashboard</li>
+                    <li>Answer Questions</li>
+                    <li>Track Discussions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2 style="font-size: 40px;">Ready to Get Started?</h2>
+        <p style="font-size: 20px; color: rgb(229, 226, 226);">Join ClarifyMe today and become part of a thriving academic community</p>
+        <a href="loginpage.html">Login Now <i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+    <footer class="dm-sans footer">&#169; 2025 ClarifyMe. Made for students, by students.</footer>
+</body>
+</html>

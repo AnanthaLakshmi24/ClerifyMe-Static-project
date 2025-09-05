@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post a Doubt - ClarifyMe</title>
+  <link rel="stylesheet" href="postdoubt.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">ClarifyMe</div>
+    <div class="user-info">
+      <span>Welcome, Hasmitha M</span>
+      <button class="logout">Logout</button>
+    </div>
+  </header>
+
+  <div class="main">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li class="active"><a href="#">Post a Doubt</a></li>
+        <li><a href="mydoubts.html">My Doubts</a></li>
+        <li><a href="recentviewed.html">Recent Questions</a></li>
+      </ul>
+    </aside>
+
+    <section class="content">
+      <h1>Post a Doubt</h1>
+      <div class="form-card">
+        <form>
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" placeholder="Enter the subject" />
+
+          <label for="description">Description:</label>
+          <textarea id="description" rows="5" placeholder="Describe your doubt in detail"></textarea>
+
+          <button type="submit">Post Doubt</button>
+        </form>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

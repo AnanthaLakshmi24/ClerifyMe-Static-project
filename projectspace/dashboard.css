@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+   background-image: url(./or.jpg);
+}
+
+header {
+  background-color: white;
+  padding: 20px 30px;
+  border-bottom: 2px solid #3498db;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logout {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout:hover {
+  background-color: #c0392b;
+}
+
+.main {
+  display: flex;
+  min-height: calc(100vh - 70px);
+}
+
+.sidebar {
+  width: 220px;
+  background-color: white;
+  border-right: 1px solid #eee;
+  padding: 10px 0;
+}
+
+
+.content {
+  flex-grow: 1;
+  padding: 40px;
+}
+
+.content h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  flex: 1;
+  min-width: 220px;
+  border-left: 6px solid #3498db;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.count {
+  font-size: 32px;
+  color: #3498db;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 16px;
+  color: #555;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  /* uniform spacing for all list items */
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar li a {
+  color: #444;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar li:hover,
+.sidebar li.active {
+  background-color: #e6f1ff;
+}
+
+.sidebar li:hover a,
+.sidebar li.active a {
+  color: #3498db;
+}
+
+
+
